@@ -27,7 +27,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_body_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -46,7 +46,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_body_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -66,7 +66,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_body_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -86,7 +86,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_body_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -115,7 +115,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h1_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -134,7 +134,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h1_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -154,7 +154,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h1_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -174,7 +174,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h1_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -203,7 +203,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h2_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -222,7 +222,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h2_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -242,7 +242,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h2_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -262,7 +262,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h2_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -291,7 +291,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h3_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -310,7 +310,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h3_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -330,7 +330,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h3_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -350,7 +350,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h3_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -379,7 +379,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h4_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -398,7 +398,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h4_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -418,7 +418,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h4_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -438,7 +438,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h4_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -467,7 +467,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h5_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -486,7 +486,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h5_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -506,7 +506,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h5_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -526,7 +526,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h5_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -555,7 +555,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       
       $wp_customize->add_setting( 'default_h6_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -574,7 +574,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
       ) );
       $wp_customize->add_setting( 'desktop_h6_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -594,7 +594,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'tablet_h6_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            'default'    => '16px', //Default setting/value to save
+            'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -614,7 +614,7 @@ function responsive_fonts_customize_register( $wp_customize ) {
 
       $wp_customize->add_setting( 'mobile_h6_font', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
-            //'default'    => '16px', //Default setting/value to save
+            //'default'    => '', //Default setting/value to save
             'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
             'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
             'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -647,7 +647,7 @@ function responsiveFonts_customize_css()
     $desktop = "1220px";
     ?>
          <style type="text/css">
-             body p { font-size: <?php echo get_theme_mod('default_body_font', '16px'); ?>; }
+             body p { font-size: <?php echo get_theme_mod('default_body_font'); ?>; }
              h1 { font-size: <?php echo get_theme_mod('default_h1_font'); ?>; }
              h2 { font-size: <?php echo get_theme_mod('default_h2_font'); ?>; }
              h3 { font-size: <?php echo get_theme_mod('default_h3_font'); ?>; }
@@ -657,7 +657,7 @@ function responsiveFonts_customize_css()
 
 
              @media screen and (max-width: <?php echo $mobile_max; ?>) {
-                body p { font-size: <?php echo get_theme_mod('mobile_body_font', '16px'); ?>; }
+                body p { font-size: <?php echo get_theme_mod('mobile_body_font'); ?>; }
                 h1 { font-size: <?php echo get_theme_mod('mobile_h1_font'); ?>; }
                 h2 { font-size: <?php echo get_theme_mod('mobile_h2_font'); ?>; }
                 h3 { font-size: <?php echo get_theme_mod('mobile_h3_font'); ?>; }
@@ -666,7 +666,7 @@ function responsiveFonts_customize_css()
                 h6 { font-size: <?php echo get_theme_mod('mobile_h6_font'); ?>; }
             }
             @media screen and (min-width: <?php echo $tablet_min; ?>) and (max-width: <?php echo $tablet_max; ?>) {
-                body p { font-size: <?php echo get_theme_mod('tablet_body_font', '16px'); ?>; }
+                body p { font-size: <?php echo get_theme_mod('tablet_body_font'); ?>; }
                 h1 { font-size: <?php echo get_theme_mod('tablet_h1_font'); ?>; }
                 h2 { font-size: <?php echo get_theme_mod('tablet_h2_font'); ?>; }
                 h3 { font-size: <?php echo get_theme_mod('tablet_h3_font'); ?>; }
@@ -675,7 +675,7 @@ function responsiveFonts_customize_css()
                 h6 { font-size: <?php echo get_theme_mod('tablet_h6_font'); ?>; }
             }
             @media screen and (min-width: <?php echo $desktop; ?>) {
-                body p { font-size: <?php echo get_theme_mod('desktop_body_font', '16px'); ?>; }
+                body p { font-size: <?php echo get_theme_mod('desktop_body_font'); ?>; }
                 h1 { font-size: <?php echo get_theme_mod('desktop_h1_font'); ?>; }
                 h2 { font-size: <?php echo get_theme_mod('desktop_h2_font'); ?>; }
                 h3 { font-size: <?php echo get_theme_mod('desktop_h3_font'); ?>; }
