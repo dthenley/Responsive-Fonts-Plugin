@@ -691,6 +691,11 @@ function responsiveFonts_customize_css()
 }
 add_action( 'wp_head', 'responsiveFonts_customize_css');
 
+$theme_version = wp_get_theme()->get( 'Version' );
+
+// Add main customizer js file.
+wp_enqueue_script( 'responsive-font', plugin_dir_url( __FILE__ ) . 'js/customize.js', array( 'jquery' ), $theme_version, false );
+
 /*
  * Code to output JS
  
