@@ -2,39 +2,51 @@
 
 jQuery(document).ready( function($){
 
-    var mobile_max = "576";
-    var tablet_min = "700";
-    var tablet_max = "1219.99";
-    var desktop = "1220";
-
     wp.customize( 'default_body_font', function( value ) {
         value.bind( function( to ) {
-            $( 'body:not(.overlay-header)#site-header, body p' ).css( 'font-size', to );                
+            $("body").get(0).style.setProperty("--RFdefaultBodyFontSize", to);
         } );
     });
-    if ($(window).width() < mobile_max) {
-        wp.customize( 'mobile_body_font', function( value ) {
-            value.bind( function( to ) {
-                //if ($(window).width() < mobile_max) {
-                        $( 'body:not(.overlay-header)#site-header, body p' ).css( 'font-size', to );  
-                //}              
-            } );
-        });
-    }
+  
+    wp.customize( 'desktop_body_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFdesktopBodyFontSize", to);
+        } );
+    });
+    wp.customize( 'tablet_body_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFtabletBodyFontSize", to);
+        } );
+    });
+    wp.customize( 'mobile_body_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFmobileBodyFontSize", to);
+        } );
+    });
     /*
-    //if (($(window).width() > tablet_min) && ($(window).width() < tablet_max) ) {
-        wp.customize( 'tablet_body_font', function( value ) {
-            value.bind( function( to ) {
-                $( 'body:not(.overlay-header)#site-header, body p' ).css( 'font-size', to );                
-            } );
-        });
-    //}
-    //if ($(window).width() > desktop) {
-        wp.customize( 'desktop_body_font', function( value ) {
-            value.bind( function( to ) {
-                $( 'body:not(.overlay-header)#site-header, body p' ).css( 'font-size', to );                
-            } );
-        });
-    //}
-    */   
+     * H1
+     
+    wp.customize( 'default_h1_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFdefaultH1FontSize", to);
+        } );
+    });
+    
+    wp.customize( 'desktop_h1_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFdesktopH1FontSize", to);
+        } );
+    });
+    wp.customize( 'tablet_h1_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFtabletH1FontSize", to);
+        } );
+    });
+    wp.customize( 'mobile_h1_font', function( value ) {
+        value.bind( function( to ) {
+            $("body").get(0).style.setProperty("--RFmobileH1FontSize", to);
+        } );
+    });
+    */
+
 });

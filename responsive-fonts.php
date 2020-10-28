@@ -647,41 +647,78 @@ function responsiveFonts_customize_css()
     $desktop = "1220px";
     ?>
          <style type="text/css">
-             body p { font-size: <?php echo get_theme_mod('default_body_font'); ?>; }
-             h1 { font-size: <?php echo get_theme_mod('default_h1_font'); ?>; }
-             h2 { font-size: <?php echo get_theme_mod('default_h2_font'); ?>; }
-             h3 { font-size: <?php echo get_theme_mod('default_h3_font'); ?>; }
-             h4 { font-size: <?php echo get_theme_mod('default_h4_font'); ?>; }
-             h5 { font-size: <?php echo get_theme_mod('default_h5_font'); ?>; }
-             h6 { font-size: <?php echo get_theme_mod('default_h6_font'); ?>; }
+            :root{
+               --RFdefaultBodyFontSize: <?php echo get_theme_mod('default_body_font'); ?>;
+               --RFdefaultH1FontSize: <?php echo get_theme_mod('default_h1_font'); ?>;
+               --RFdefaultH2FontSize: <?php echo get_theme_mod('default_h2_font'); ?>;
+               --RFdefaultH3FontSize: <?php echo get_theme_mod('default_h3_font'); ?>;
+               --RFdefaultH4FontSize: <?php echo get_theme_mod('default_h4_font'); ?>;
+               --RFdefaultH5FontSize: <?php echo get_theme_mod('default_h5_font'); ?>;
+               --RFdefaultH6FontSize: <?php echo get_theme_mod('default_h6_font'); ?>;
+
+               --RFdesktopBodyFontSize: <?php echo get_theme_mod('desktop_body_font'); ?>;
+               --RFdesktopH1FontSize: <?php echo get_theme_mod('desktop_h1_font'); ?>;
+               --RFdesktopH2FontSize: <?php echo get_theme_mod('desktop_h2_font'); ?>;
+               --RFdesktopH3FontSize: <?php echo get_theme_mod('desktop_h3_font'); ?>;
+               --RFdesktopH4FontSize: <?php echo get_theme_mod('desktop_h4_font'); ?>;
+               --RFdesktopH5FontSize: <?php echo get_theme_mod('desktop_h5_font'); ?>;
+               --RFdesktopH6FontSize: <?php echo get_theme_mod('desktop_h6_font'); ?>;
+
+               --RFtabletBodyFontSize: <?php echo get_theme_mod('tablet_body_font'); ?>;
+               --RFtabletH1FontSize: <?php echo get_theme_mod('tablet_h1_font'); ?>;
+               --RFtabletH2FontSize: <?php echo get_theme_mod('tablet_h2_font'); ?>;
+               --RFtabletH3FontSize: <?php echo get_theme_mod('tablet_h3_font'); ?>;
+               --RFtabletH4FontSize: <?php echo get_theme_mod('tablet_h4_font'); ?>;
+               --RFtabletH5FontSize: <?php echo get_theme_mod('tablet_h5_font'); ?>;
+               --RFtabletH6FontSize: <?php echo get_theme_mod('tablet_h6_font'); ?>;
+
+               --RFmobileFontSize: <?php echo get_theme_mod('mobile_body_font'); ?>;
+               --RFmobileH1FontSize: <?php echo get_theme_mod('mobile_h1_font'); ?>;
+               --RFmobileH2FontSize: <?php echo get_theme_mod('mobile_h2_font'); ?>;
+               --RFmobileH3FontSize: <?php echo get_theme_mod('mobile_h3_font'); ?>;
+               --RFmobileH4FontSize: <?php echo get_theme_mod('mobile_h4_font'); ?>;
+               --RFmobileH5FontSize: <?php echo get_theme_mod('mobile_h5_font'); ?>;
+               --RFmobileH6FontSize: <?php echo get_theme_mod('mobile_h6_font'); ?>;
 
 
-             @media screen and (max-width: <?php echo $mobile_max; ?>) {
-                body p { font-size: <?php echo get_theme_mod('mobile_body_font'); ?>; }
-                h1 { font-size: <?php echo get_theme_mod('mobile_h1_font'); ?>; }
-                h2 { font-size: <?php echo get_theme_mod('mobile_h2_font'); ?>; }
-                h3 { font-size: <?php echo get_theme_mod('mobile_h3_font'); ?>; }
-                h4 { font-size: <?php echo get_theme_mod('mobile_h4_font'); ?>; }
-                h5 { font-size: <?php echo get_theme_mod('mobile_h5_font'); ?>; }
-                h6 { font-size: <?php echo get_theme_mod('mobile_h6_font'); ?>; }
+
+            }
+
+             body p { font-size: var(--RFdefaultBodyFontSize); }
+             h1 { font-size: var(--RFdefaultH1FontSize); }
+             h2 { font-size: var(--RFdefaultH2FontSize); }
+             h3 { font-size: var(--RFdefaultH3FontSize); }
+             h4 { font-size: var(--RFdefaultH4FontSize); }
+             h5 { font-size: var(--RFdefaultH5FontSize); }
+             h6 { font-size: var(--RFdefaultH6FontSize); }
+
+
+            @media screen and (max-width: <?php echo $mobile_max; ?>) {
+               body p { font-size: var(--RFmobileBodyFontSize); }
+               h1 { font-size: var(--RFmobileH1FontSize); }
+               h2 { font-size: var(--RFmobileH2FontSize); }
+               h3 { font-size: var(--RFmobileH3FontSize); }
+               h4 { font-size: var(--RFmobileH4FontSize); }
+               h5 { font-size: var(--RFmobileH5FontSize); }
+               h6 { font-size: var(--RFmobileH6FontSize); }
             }
             @media screen and (min-width: <?php echo $tablet_min; ?>) and (max-width: <?php echo $tablet_max; ?>) {
-                body p { font-size: <?php echo get_theme_mod('tablet_body_font'); ?>; }
-                h1 { font-size: <?php echo get_theme_mod('tablet_h1_font'); ?>; }
-                h2 { font-size: <?php echo get_theme_mod('tablet_h2_font'); ?>; }
-                h3 { font-size: <?php echo get_theme_mod('tablet_h3_font'); ?>; }
-                h4 { font-size: <?php echo get_theme_mod('tablet_h4_font'); ?>; }
-                h5 { font-size: <?php echo get_theme_mod('tablet_h5_font'); ?>; }
-                h6 { font-size: <?php echo get_theme_mod('tablet_h6_font'); ?>; }
+               body p { font-size: var(--RFtabletBodyFontSize); }
+               h1 { font-size: var(--RFtabletH1FontSize); }
+               h2 { font-size: var(--RFtabletH2FontSize); }
+               h3 { font-size: var(--RFtabletH3FontSize); }
+               h4 { font-size: var(--RFtabletH4FontSize); }
+               h5 { font-size: var(--RFtabletH5FontSize); }
+               h6 { font-size: var(--RFtabletH6FontSize); }
             }
             @media screen and (min-width: <?php echo $desktop; ?>) {
-                body p { font-size: <?php echo get_theme_mod('desktop_body_font'); ?>; }
-                h1 { font-size: <?php echo get_theme_mod('desktop_h1_font'); ?>; }
-                h2 { font-size: <?php echo get_theme_mod('desktop_h2_font'); ?>; }
-                h3 { font-size: <?php echo get_theme_mod('desktop_h3_font'); ?>; }
-                h4 { font-size: <?php echo get_theme_mod('desktop_h4_font'); ?>; }
-                h5 { font-size: <?php echo get_theme_mod('desktop_h5_font'); ?>; }
-                h6 { font-size: <?php echo get_theme_mod('desktop_h6_font'); ?>; }
+               body p { font-size: var(--RFdesktopBodyFontSize); }
+               h1 { font-size: var(--RFdesktopH1FontSize); }
+               h2 { font-size: var(--RFdesktopH2FontSize); }
+               h3 { font-size: var(--RFdesktopH3FontSize); }
+               h4 { font-size: var(--RFdesktopH4FontSize); }
+               h5 { font-size: var(--RFdesktopH5FontSize); }
+               h6 { font-size: var(--RFdesktopH6FontSize); }
             }
          </style>
 
